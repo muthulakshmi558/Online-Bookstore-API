@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = ["https://vercel.com/muthulakshmis-projects-57e18e42/online-bookstore-api"]
+CORS_ALLOW_ALL_ORIGINS = ["https://online-food-menu-api.vercel.app"]
 ROOT_URLCONF = 'bookstore.urls'
 
 REST_FRAMEWORK = {
