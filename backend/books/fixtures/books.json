@@ -1,0 +1,380 @@
+[
+  {
+    "model": "books.author",
+    "pk": 1,
+    "fields": { "name": "J.K. Rowling" }
+  },
+  {
+    "model": "books.author",
+    "pk": 2,
+    "fields": { "name": "George R.R. Martin" }
+  },
+  {
+    "model": "books.author",
+    "pk": 3,
+    "fields": { "name": "Dan Brown" }
+  },
+  {
+    "model": "books.author",
+    "pk": 4,
+    "fields": { "name": "Paulo Coelho" }
+  },
+  {
+    "model": "books.author",
+    "pk": 5,
+    "fields": { "name": "Harper Lee" }
+  },
+
+  {
+    "model": "books.category",
+    "pk": 1,
+    "fields": { "name": "Fantasy" }
+  },
+  {
+    "model": "books.category",
+    "pk": 2,
+    "fields": { "name": "Thriller" }
+  },
+  {
+    "model": "books.category",
+    "pk": 3,
+    "fields": { "name": "Classic" }
+  },
+  {
+    "model": "books.category",
+    "pk": 4,
+    "fields": { "name": "Romance" }
+  },
+  {
+    "model": "books.category",
+    "pk": 5,
+    "fields": { "name": "Mystery" }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": 1,
+      "category": 1,
+      "price": "800",
+      "rating": "4.9",
+      "published_date": "1997-06-26",
+      "description": "First book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": 1,
+      "category": 1,
+      "price": "1000",
+      "rating": "4.8",
+      "published_date": "1998-07-02",
+      "description": "Second book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "A Game of Thrones",
+      "author": 2,
+      "category": 1,
+      "price": "1200",
+      "rating": "4.7",
+      "published_date": "1996-08-06",
+      "description": "First book in A Song of Ice and Fire."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "A Clash of Kings",
+      "author": 2,
+      "category": 1,
+      "price": "1400",
+      "rating": "4.6",
+      "published_date": "1998-11-16",
+      "description": "Second book in A Song of Ice and Fire."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "The Da Vinci Code",
+      "author": 3,
+      "category": 2,
+      "price": "1200",
+      "rating": "4.4",
+      "published_date": "2003-03-18",
+      "description": "Best-selling thriller by Dan Brown."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "title": "Angels & Demons",
+      "author": 3,
+      "category": 2,
+      "price": "1300",
+      "rating": "4.5",
+      "published_date": "2000-05-01",
+      "description": "Thriller novel featuring Robert Langdon."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "title": "The Alchemist",
+      "author": 4,
+      "category": 4,
+      "price": "1200",
+      "rating": "4.7",
+      "published_date": "1988-04-01",
+      "description": "Inspirational novel about following dreams."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "title": "Brida",
+      "author": 4,
+      "category": 4,
+      "price": "1000",
+      "rating": "4.2",
+      "published_date": "1990-01-01",
+      "description": "Romantic story by Paulo Coelho."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "title": "To Kill a Mockingbird",
+      "author": 5,
+      "category": 3,
+      "price": "1100",
+      "rating": "4.9",
+      "published_date": "1960-07-11",
+      "description": "Classic novel set in the American South."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "title": "Go Set a Watchman",
+      "author": 5,
+      "category": 3,
+      "price": "1200",
+      "rating": "3.9",
+      "published_date": "2015-07-14",
+      "description": "Follow-up novel by Harper Lee."
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 11,
+    "fields": {
+      "title": "Inferno",
+      "author": 3,
+      "category": 2,
+      "price": "1300",
+      "rating": "4.3",
+      "published_date": "2013-05-14",
+      "description": "Robert Langdon thriller."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 12,
+    "fields": {
+      "title": "Deception Point",
+      "author": 3,
+      "category": 2,
+      "price": "1000",
+      "rating": "4.1",
+      "published_date": "2001-11-01",
+      "description": "Techno-thriller by Dan Brown."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 13,
+    "fields": {
+      "title": "Digital Fortress",
+      "author": 3,
+      "category": 2,
+      "price": "1200",
+      "rating": "3.8",
+      "published_date": "1998-02-01",
+      "description": "Debut novel by Dan Brown."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 14,
+    "fields": {
+      "title": "Veronika Decides to Die",
+      "author": 4,
+      "category": 4,
+      "price": "1000",
+      "rating": "4.0",
+      "published_date": "1998-01-01",
+      "description": "Novel exploring meaning of life."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 15,
+    "fields": {
+      "title": "Eleven Minutes",
+      "author": 4,
+      "category": 4,
+      "price": "1200",
+      "rating": "4.1",
+      "published_date": "2003-01-01",
+      "description": "Romantic fiction by Paulo Coelho."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 16,
+    "fields": {
+      "title": "The Casual Vacancy",
+      "author": 1,
+      "category": 3,
+      "price": "1200",
+      "rating": "3.7",
+      "published_date": "2012-09-27",
+      "description": "Novel for adults by J.K. Rowling."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 17,
+    "fields": {
+      "title": "Fantastic Beasts and Where to Find Them",
+      "author": 1,
+      "category": 1,
+      "price": "1200",
+      "rating": "4.3",
+      "published_date": "2001-03-01",
+      "description": "Companion book to Harry Potter."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 18,
+    "fields": {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": 1,
+      "category": 1,
+      "price": "1300",
+      "rating": "4.9",
+      "published_date": "1999-07-08",
+      "description": "Third book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 19,
+    "fields": {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": 1,
+      "category": 1,
+      "price": "1400",
+      "rating": "5.0",
+      "published_date": "2000-07-08",
+      "description": "Fourth book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 20,
+    "fields": {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": 1,
+      "category": 1,
+      "price": "1400",
+      "rating": "4.8",
+      "published_date": "2003-06-21",
+      "description": "Fifth book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 21,
+    "fields": {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": 1,
+      "category": 1,
+      "price": "1500",
+      "rating": "4.9",
+      "published_date": "2005-07-16",
+      "description": "Sixth book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 22,
+    "fields": {
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": 1,
+      "category": 1,
+      "price": "1600",
+      "rating": "5.0",
+      "published_date": "2007-07-21",
+      "description": "Final book in Harry Potter series."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 23,
+    "fields": {
+      "title": "The Pilgrimage",
+      "author": 4,
+      "category": 4,
+      "price": "700",
+      "rating": "4.2",
+      "published_date": "1987-01-01",
+      "description": "Spiritual journey novel."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 24,
+    "fields": {
+      "title": "Manuscript Found in Accra",
+      "author": 4,
+      "category": 4,
+      "price": "600",
+      "rating": "4.0",
+      "published_date": "2012-01-01",
+      "description": "Wisdom filled novel by Paulo Coelho."
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 25,
+    "fields": {
+      "title": "The Spy",
+      "author": 4,
+      "category": 4,
+      "price": "800",
+      "rating": "3.9",
+      "published_date": "2016-01-01",
+      "description": "Novel about Mata Hari."
+    }
+  }
+]
