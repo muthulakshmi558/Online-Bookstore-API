@@ -55,8 +55,10 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "https://online-bookstore-frontend.vercel.app",
-    "http://localhost:3000",  # for local testing
-]ROOT_URLCONF = 'bookstore.urls'
+    "http://localhost:3000",  
+    ]
+
+ROOT_URLCONF = 'bookstore.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
