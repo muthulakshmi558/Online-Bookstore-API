@@ -53,8 +53,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = ["https://online-food-menu-api.vercel.app"]
-ROOT_URLCONF = 'bookstore.urls'
+CORS_ALLOWED_ORIGINS = [
+    "https://online-bookstore-frontend.vercel.app",
+    "http://localhost:3000",  # for local testing
+]ROOT_URLCONF = 'bookstore.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
@@ -132,6 +134,7 @@ import os
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Where collectstatic will copy all static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -140,8 +143,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # if you have project-level static folder
 ]
-STATICFILES_DIRS = [BASE_DIR / "backend/static"]
-
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
